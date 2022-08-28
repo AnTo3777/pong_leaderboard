@@ -6,7 +6,8 @@ socket.on('transfer-database', sqlDatabase => {
         const name = sqlDatabase[i].name;
         const score = sqlDatabase[i].score;
         const line = document.createElement('p');
-        line.innerHTML = `${i+1}. ${name} ................. ${score}`
+        const points = '.'.repeat(21 - name.length).trimEnd()
+        line.innerHTML = `${i+1}. ${name} ${points} ${score}`
         line.setAttribute('class', 'line');
         container.appendChild(line);
     };
