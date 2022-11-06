@@ -11,4 +11,4 @@ socket.on('transfer-database', sqlDatabase => {
         line.setAttribute('class', 'line');
         container.appendChild(line);
     };
-})
+});

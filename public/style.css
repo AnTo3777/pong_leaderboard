@@ -1,5 +1,10 @@
 /*** fonts ***/
 @font-face {
+    font-family: "font1";
+    src: url(./font1.ttf);
+}
+
+@font-face {
     font-family: "font";
     src: url(./font.ttf);
 }
@@ -14,12 +19,12 @@ p {
     position: relative;
     color: rgb(200, 200, 200);
     text-align: center;
-    font-family: font;
 }
 
 #title {
     margin: 30px auto 0px;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: font1;
 }
 
 .line {
@@ -30,6 +35,7 @@ p {
     font-size: 0.7rem;
     line-height: 30px;
     padding-left: 15px;
+    font-family: font;
 }
 
 .container {
@@ -39,5 +45,4 @@ p {
     width: 350px;
     height: 550px;
     overflow: scroll;
-    border-radius: 10px;
 }
